@@ -106,10 +106,30 @@ export const siteConfig = {
     { year: 2035, text: "Still arguing. Still winning." }
   ],
 
-  // 8. Final Message
-  finalMessage: {
-    heading: "AND FINALLY...",
-    text: "No matter how much life changes, you'll always be my sister.\nThank you for being exactly who you are.\nI hope this year brings you everything you've ever wanted.",
-    signOff: "Happy Birthday, Ananya.\n— Adi"
+  // 8. Ending Sequence
+  ending: {
+    beforeYouGo: "AND BEFORE YOU GO...",
+    oneLastThing: "There is one last thing\nI want you to know.",
+    
+    messageHeading: "A LITTLE MESSAGE",
+    personalMessage: "I know we fight about stupid things.\nI know I steal your charger and pretend I didn't.\n\nBut I also know that life wouldn't be half as interesting without you.\nThank you for being exactly who you are.\n\nI hope this year brings you everything you've ever wanted, and more.\n\nI'll always have your back.",
+    
+    finalMemoryImage: "/images/hero/portrait.jpg", // placeholder
+    finalMemoryText1: "No matter how much we grow...",
+    finalMemoryText2: "I'll always be your brother.",
+    
+    closingText1: "That's all...",
+    closingText2: "for now.",
+    signOff: "Made with ❤️ by Adi"
+  },
+
+  // 9. Secret Page
+  secretContent: {
+    title: "This part was made only for you.",
+    message: "Here are some memories that didn't make the main page.\nThe ones that are just for us.\n\nKeep shining, Ananya.",
+    photos: [
+      "/images/secret/1.jpg",
+      "/images/secret/2.jpg"
+    ]
   }
 };

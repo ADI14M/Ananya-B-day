@@ -9,6 +9,11 @@ export function BirthdayReveal() {
   const handleReveal = () => {
     setIsRevealed(true);
     
+    // Smoothly scroll the container perfectly into view
+    setTimeout(() => {
+      document.getElementById('surprise')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 100);
+    
     // Sequence the big reveal
     setTimeout(() => setStep(1), 2000); // Light expands
     setTimeout(() => setStep(2), 4000); // HAPPY
@@ -44,7 +49,7 @@ export function BirthdayReveal() {
         <AnimatePresence>
           <motion.div 
             key="reveal"
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black overflow-hidden"
+            className="absolute inset-0 z-40 flex items-center justify-center bg-black overflow-hidden"
           >
             {/* Confetti particles - simplified for performance */}
             {step >= 2 && (
