@@ -63,7 +63,7 @@ export function PhotoGallery() {
                 <img 
                   src={memory.image} 
                   alt={memory.caption || `Memory from ${memory.year}`} 
-                  className="w-full h-auto block opacity-90 transition-transform duration-700 group-hover:scale-105 group-hover:opacity-100 mix-blend-luminosity group-hover:mix-blend-normal"
+                  className="w-full h-auto block opacity-90 transition-all duration-700 group-hover:scale-105 group-hover:opacity-100 mix-blend-luminosity group-hover:mix-blend-normal"
                   onError={() => {
                     setFailedImages(prev => {
                       const newSet = new Set(prev);
@@ -72,10 +72,6 @@ export function PhotoGallery() {
                     });
                   }}
                 />
-                <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/50 opacity-0 transition-opacity duration-500 group-hover:opacity-100 backdrop-blur-sm p-6 text-center">
-                  <span className="font-sans text-xs tracking-[0.3em] text-[#D4AF37]">{memory.year}</span>
-                  <span className="mt-4 font-serif text-lg text-white md:text-xl leading-relaxed">{memory.caption}</span>
-                </div>
               </motion.div>
             );
           })}
