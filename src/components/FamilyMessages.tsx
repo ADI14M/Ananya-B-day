@@ -21,7 +21,7 @@ export function FamilyMessages() {
           </h3>
         </motion.div>
 
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="flex flex-wrap justify-center gap-8 mx-auto w-full max-w-6xl">
           {siteConfig.people.map((person, index) => (
             <motion.div
               key={index}
@@ -29,7 +29,7 @@ export function FamilyMessages() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group cursor-pointer overflow-hidden bg-white/5 border border-white/10"
+              className="w-full max-w-[420px] sm:w-[360px] md:w-[380px] group cursor-pointer overflow-hidden bg-white/5 border border-white/10"
               onClick={() => setSelectedPerson(person)}
             >
               <div className="aspect-[4/5] overflow-hidden">
