@@ -7,7 +7,7 @@ import { Timeline } from './components/Timeline'
 import { PhotoGallery } from './components/PhotoGallery'
 import { ThingsWeKnow } from './components/ThingsWeKnow'
 import { FamilyMessages } from './components/FamilyMessages'
-import { VideoMoment } from './components/VideoMoment'
+import { PhotoMontage } from './components/PhotoMontage'
 import { Stats } from './components/Stats'
 import { FutureGen } from './components/FutureGen'
 import { BirthdayReveal } from './components/BirthdayReveal'
@@ -65,7 +65,7 @@ function App() {
                 <PhotoGallery />
                 <ThingsWeKnow />
                 <FamilyMessages />
-                <VideoMoment />
+                <PhotoMontage />
                 <Stats />
                 <FutureGen />
                 <BirthdayReveal />
