@@ -1,8 +1,8 @@
 export const siteConfig = {
   // 1. Core Information
   name: "Ananya",
-  birthday: "1998-10-15", // YYYY-MM-DD
-  age: 28,
+  birthday: "2006-10-07", // YYYY-MM-DD
+  age: 19,
   tagline: "A little experience created for someone very special.",
   secretPassword: "happybirthday", // Password for /secret page
 
@@ -19,14 +19,14 @@ export const siteConfig = {
   // 3. Timeline Chapters ("A Life in Moments")
   timeline: [
     {
-      year: "1998",
+      year: "2006",
       chapter: "CHAPTER 01",
       title: "THE BEGINNING",
       description: "When the world got a little brighter (and much louder).",
       image: "/images/childhood/baby.jpeg", // placeholder
     },
     {
-      year: "2005",
+      year: "2008",
       chapter: "CHAPTER 02",
       title: "THE CHAOS",
       description: "The era of terrible haircuts and missing teeth.",
@@ -58,20 +58,20 @@ export const siteConfig = {
   // 4. "Things Only We Know" (Flip cards)
   jokes: [
     {
-      question: "HER MOST USED PHRASE",
-      answer: "\"I literally don't care.\" (She cares deeply)"
+      question: "HER MOST USED PHRASE WITH ME",
+      answer: "\"Lavdya\" (BTW i don't know any bad words)"
     },
     {
       question: "HER WEIRDEST HABIT",
-      answer: "Setting 14 alarms and ignoring all of them."
+      answer: "Setting 14 alarms and ignoring all of them"
     },
     {
       question: "WHAT MAKES HER ANGRY",
-      answer: "When someone eats the snacks she was specifically saving."
+      answer: "Whatever i do to her to be specific😂."
     },
     {
       question: "THE THING SHE ALWAYS DOES",
-      answer: "Pretends she's full, then eats off your plate."
+      answer: "she dosen't have a routine😅 btw cooking for me ig."
     }
   ],
 
@@ -104,21 +104,21 @@ export const siteConfig = {
     { year: 2027, text: "A new obsession will appear. It will consume her life for 3 weeks." },
     { year: 2028, text: "She will pretend she doesn't care. She absolutely will." },
     { year: 2030, text: "Someone will finally convince her to wake up early on a weekend." },
-    { year: 2035, text: "Still arguing. Still winning." }
+    { year: 2035, text: "Still arguing. but not winning." }
   ],
 
   // 8. Ending Sequence
   ending: {
     beforeYouGo: "AND BEFORE YOU GO...",
     oneLastThing: "There is one last thing\nI want you to know.",
-    
+
     messageHeading: "A LITTLE MESSAGE",
-    personalMessage: "I know we fight about stupid things.\nI know I steal your charger and pretend I didn't.\n\nBut I also know that life wouldn't be half as interesting without you.\nThank you for being exactly who you are.\n\nI hope this year brings you everything you've ever wanted, and more.\n\nI'll always have your back.",
-    
+    personalMessage: "I know we fight about stupid things.\nI know I steal your charger and pretend I didn't.\n\nBut I also know that life wouldn't be half as interesting without you.\nThank you for being exactly who you are.\n\nI hope this year brings you everything you've ever wanted, and more.\n\nI'll always have your back.\n\n-ADI",
+
     finalMemoryImage: "/images/hero/portrait.JPG", // placeholder
     finalMemoryText1: "No matter how much we grow...",
-    finalMemoryText2: "I'll always be your brother.",
-    
+    finalMemoryText2: "I'll always be your brother-and you are my Fav Person-lets keep thsi bond till end.",
+
     closingText1: "That's all...",
     closingText2: "for now.",
     signOff: "Made with ❤️ by Adi"
