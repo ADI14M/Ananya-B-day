@@ -7,7 +7,7 @@ export function PhotoMontage() {
   const [showEnding, setShowEnding] = useState(false);
   const [endingStep, setEndingStep] = useState(0);
   const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef, { amount: 0.5 }); // Start when 50% visible
+  const isInView = useInView(sectionRef, { amount: 0.2 }); // Start when 20% visible
 
   useEffect(() => {
     if (!isInView || showEnding || montagePhotos.length === 0) return;

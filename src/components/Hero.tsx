@@ -54,7 +54,6 @@ export function Hero({ onEnter, hasEntered }: HeroProps) {
       </div>
 
       <div className="z-10 flex flex-col items-center justify-center text-center">
-        {!hasEntered ? (
           <div className="flex h-64 flex-col items-center justify-center">
             {step === 0 && (
               <motion.div
@@ -110,7 +109,7 @@ export function Hero({ onEnter, hasEntered }: HeroProps) {
                   {siteConfig.tagline}
                 </motion.p>
 
-                {step >= 3 && (
+                {!hasEntered && step >= 3 && (
                   <motion.button
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -132,7 +131,6 @@ export function Hero({ onEnter, hasEntered }: HeroProps) {
               </motion.div>
             )}
           </div>
-        ) : null}
       </div>
     </div>
   );
