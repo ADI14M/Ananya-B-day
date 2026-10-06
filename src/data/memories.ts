@@ -1,14 +1,14 @@
 export const montagePhotos = [
   {
-    src: "/images/hero/portrait.jpg",
+    src: "/images/hero/portrait.JPG",
     caption: "One of those days...",
   },
   {
-    src: "/images/memories/teen.jpg",
+    src: "/images/memories/teen.jpeg",
     caption: "Another memory.",
   },
   {
-    src: "/images/memories/adventure.jpg",
+    src: "/images/memories/adventure.jpeg",
     caption: "Always worth remembering.",
   },
 ];

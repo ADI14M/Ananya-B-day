@@ -22,35 +22,35 @@ export const siteConfig = {
       chapter: "CHAPTER 01",
       title: "THE BEGINNING",
       description: "When the world got a little brighter (and much louder).",
-      image: "/images/childhood/baby.jpg", // placeholder
+      image: "/images/childhood/baby.jpeg", // placeholder
     },
     {
       year: "2005",
       chapter: "CHAPTER 02",
       title: "THE CHAOS",
       description: "The era of terrible haircuts and missing teeth.",
-      image: "/images/childhood/chaos.jpg",
+      image: "/images/childhood/chaos.jpeg",
     },
     {
       year: "2012",
       chapter: "CHAPTER 03",
       title: "THE GROWING UP ERA",
       description: "Figuring things out, one dramatic phase at a time.",
-      image: "/images/memories/teen.jpg",
+      image: "/images/memories/teen.jpeg",
     },
     {
       year: "2018",
       chapter: "CHAPTER 04",
       title: "THE ADVENTURES",
       description: "Exploring the world and making terrible decisions.",
-      image: "/images/memories/adventure.jpg",
+      image: "/images/memories/adventure.jpeg",
     },
     {
       year: "2026",
       chapter: "CHAPTER 05",
       title: "TODAY",
       description: "Still chaotic. Still amazing.",
-      image: "/images/hero/portrait.jpg",
+      image: "/images/hero/portrait.JPG",
     }
   ],
 
@@ -79,13 +79,13 @@ export const siteConfig = {
     {
       name: "Mom & Dad",
       relationship: "Parents",
-      image: "/images/family/parents.jpg",
+      image: "/images/family/parents.jpeg",
       message: "We love you so much! Even when you're being impossible. Happy Birthday to our favorite daughter (don't tell the others)."
     },
     {
       name: "Adi",
       relationship: "Brother",
-      image: "/images/family/adi.jpg",
+      image: "/images/family/adi.jpeg",
       message: "I built this entire website just to prove I'm the favorite child. Happy birthday weirdo!"
     }
   ],
@@ -114,7 +114,7 @@ export const siteConfig = {
     messageHeading: "A LITTLE MESSAGE",
     personalMessage: "I know we fight about stupid things.\nI know I steal your charger and pretend I didn't.\n\nBut I also know that life wouldn't be half as interesting without you.\nThank you for being exactly who you are.\n\nI hope this year brings you everything you've ever wanted, and more.\n\nI'll always have your back.",
     
-    finalMemoryImage: "/images/hero/portrait.jpg", // placeholder
+    finalMemoryImage: "/images/hero/portrait.JPG", // placeholder
     finalMemoryText1: "No matter how much we grow...",
     finalMemoryText2: "I'll always be your brother.",
     
@@ -128,8 +128,8 @@ export const siteConfig = {
     title: "This part was made only for you.",
     message: "Here are some memories that didn't make the main page.\nThe ones that are just for us.\n\nKeep shining, Ananya.",
     photos: [
-      "/images/secret/1.jpg",
-      "/images/secret/2.jpg"
+      "/images/secret/1.jpeg",
+      "/images/secret/2.jpeg"
     ]
   }
 };
