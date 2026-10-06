@@ -7,6 +7,7 @@ export const siteConfig = {
   secretPassword: "happybirthday", // Password for /secret page
 
   // 2. Personality Traits for "The Main Character"
+  mainCharacterPortrait: "/images/portrait/ananya.jpg",
   personalityTraits: [
     "She's kind.",
     "She's chaotic.",

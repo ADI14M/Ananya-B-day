@@ -40,20 +40,30 @@ export function MainCharacter() {
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true, margin: "-20%" }}
         transition={{ duration: 1.5, ease: "easeOut" }}
-        className="relative mt-32 h-[60vh] w-full max-w-lg overflow-hidden rounded-sm md:h-[80vh]"
+        className="relative mt-32 h-[60vh] w-full max-w-lg overflow-hidden rounded-sm md:h-[80vh] bg-[#0a0a0a] border border-white/5 shadow-2xl"
       >
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10" />
-        {/* Placeholder image, falls back gracefully */}
-        <div className="h-full w-full bg-white/5">
-          <img 
-            src="/images/hero/portrait.jpg" 
-            alt={siteConfig.name}
-            className="h-full w-full object-cover object-center opacity-80 mix-blend-luminosity transition-all duration-1000 hover:mix-blend-normal hover:opacity-100"
-            onError={(e) => {
-              (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiMzMzMiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiM3NzciIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5Qb3J0cmFpdCBQbGFjZWhvbGRlcjwvdGV4dD48L3N2Zz4=';
-            }}
-          />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-20" />
+        
+        <div className="absolute inset-0 flex items-center justify-center">
+          <span className="font-sans text-xs tracking-[0.3em] text-white/20">PORTRAIT COMING SOON</span>
         </div>
+
+        <img 
+          src={siteConfig.mainCharacterPortrait} 
+          alt=""
+          className="absolute inset-0 z-0 h-full w-full object-cover opacity-20 blur-2xl mix-blend-luminosity"
+          aria-hidden="true"
+        />
+        <img 
+          src={siteConfig.mainCharacterPortrait} 
+          alt={siteConfig.name}
+          className="relative z-10 h-full w-full object-contain opacity-90 mix-blend-luminosity transition-all duration-1000 hover:mix-blend-normal hover:opacity-100"
+          onError={(e) => {
+            e.currentTarget.style.display = 'none';
+            const bg = e.currentTarget.previousElementSibling as HTMLElement;
+            if (bg) bg.style.display = 'none';
+          }}
+        />
       </motion.div>
     </section>
   );
