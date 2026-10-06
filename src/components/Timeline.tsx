@@ -40,11 +40,20 @@ export function Timeline() {
                 </div>
                 
                 <div className="md:w-1/2">
-                  <div className="group overflow-hidden rounded-sm bg-white/5">
+                  <div className="group relative overflow-hidden rounded-sm bg-[#111] aspect-[16/10] flex items-center justify-center">
+                    {/* Blurred background version of the same image */}
+                    <img 
+                      src={item.image} 
+                      alt=""
+                      className="absolute inset-0 h-full w-full object-cover opacity-20 blur-xl mix-blend-luminosity"
+                      aria-hidden="true"
+                    />
+                    
+                    {/* The actual uncropped image */}
                     <img 
                       src={item.image} 
                       alt={item.title}
-                      className="aspect-video w-full object-cover opacity-80 mix-blend-luminosity transition-all duration-700 group-hover:scale-105 group-hover:mix-blend-normal group-hover:opacity-100"
+                      className="relative z-10 h-full w-full object-contain opacity-90 mix-blend-luminosity transition-all duration-700 group-hover:scale-105 group-hover:mix-blend-normal group-hover:opacity-100"
                       onError={(e) => {
                         (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiMzMzMiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiM3NzciIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5JbWFnZTwvdGV4dD48L3N2Zz4=';
                       }}

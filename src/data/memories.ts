@@ -12,3 +12,21 @@ export const montagePhotos = [
     caption: "Always worth remembering.",
   },
 ];
+
+export const memories = [
+  {
+    image: "/images/memories/memory-01.jpg",
+    year: "2010",
+    caption: "A memory worth keeping.",
+  },
+  {
+    image: "/images/memories/memory-02.jpg",
+    year: "2012",
+    caption: "Those were the days.",
+  },
+  {
+    image: "/images/memories/memory-03.jpg",
+    year: "2015",
+    caption: "Growing up.",
+  },
+];
