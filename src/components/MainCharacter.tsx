@@ -42,26 +42,18 @@ export function MainCharacter() {
         transition={{ duration: 1.5, ease: "easeOut" }}
         className="relative mt-32 h-[60vh] w-full max-w-lg overflow-hidden rounded-sm md:h-[80vh] bg-[#0a0a0a] border border-white/5 shadow-2xl"
       >
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-20 pointer-events-none" />
         
-        <div className="absolute inset-0 flex items-center justify-center">
+        <div className="absolute inset-0 flex items-center justify-center z-0">
           <span className="font-sans text-xs tracking-[0.3em] text-white/20">PORTRAIT COMING SOON</span>
         </div>
 
         <img 
           src={siteConfig.mainCharacterPortrait} 
-          alt=""
-          className="absolute inset-0 z-0 h-full w-full object-cover opacity-20 blur-2xl"
-          aria-hidden="true"
-        />
-        <img 
-          src={siteConfig.mainCharacterPortrait} 
           alt={siteConfig.name}
-          className="relative z-10 h-full w-full object-contain transition-all duration-1000"
+          className="absolute inset-0 z-10 h-full w-full object-cover object-center transition-all duration-1000"
           onError={(e) => {
             e.currentTarget.style.display = 'none';
-            const bg = e.currentTarget.previousElementSibling as HTMLElement;
-            if (bg) bg.style.display = 'none';
           }}
         />
       </motion.div>
