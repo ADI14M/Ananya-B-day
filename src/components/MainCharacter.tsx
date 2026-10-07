@@ -51,13 +51,13 @@ export function MainCharacter() {
         <img 
           src={siteConfig.mainCharacterPortrait} 
           alt=""
-          className="absolute inset-0 z-0 h-full w-full object-cover opacity-20 blur-2xl mix-blend-luminosity"
+          className="absolute inset-0 z-0 h-full w-full object-cover opacity-20 blur-2xl"
           aria-hidden="true"
         />
         <img 
           src={siteConfig.mainCharacterPortrait} 
           alt={siteConfig.name}
-          className="relative z-10 h-full w-full object-contain opacity-90 mix-blend-luminosity transition-all duration-1000 hover:mix-blend-normal hover:opacity-100"
+          className="relative z-10 h-full w-full object-contain transition-all duration-1000"
           onError={(e) => {
             e.currentTarget.style.display = 'none';
             const bg = e.currentTarget.previousElementSibling as HTMLElement;
